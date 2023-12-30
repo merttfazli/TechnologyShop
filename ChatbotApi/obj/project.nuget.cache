@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "9e5iDD7bWIYSLJnKTgjGQ0y9BD7mHjP5HanRbTYr4HMR7IH1Ak4gJh1ZTCbaXMwLEudpbLb6Zmxz1iA/EPs1IA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\ChatbotApi\\ChatbotApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Samed\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Samed\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Samed\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\Samed\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Samed\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Samed\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
