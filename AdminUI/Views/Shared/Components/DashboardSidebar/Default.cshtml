@@ -1,0 +1,60 @@
+﻿﻿
+@model List<AdminUI.Models.MenuViewModel>
+<aside id="sidebar-left" class="sidebar-left">
+    <div class="sidebar-header">
+        <div class="sidebar-title">
+            
+        </div>
+        <div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+            <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+        </div>
+    </div>
+    <div class="nano">
+        <div class="nano-content">
+            <nav id="menu" class="nav-main" role="navigation">
+                <ul class="nav nav-main">
+                    @foreach (var item in Model)
+                    {
+                        if (item.Modules.Count == 0)
+                        {
+                            <li>
+                                <a class="nav-link" href="@item.Module.Url">
+                                    <i class="@item.Module.Icon"></i>
+                                    <span>@item.Module.Name</span>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-parent">
+                                <a class="nav-link" href="#">
+                                    <i class="@item.Module.Icon"></i>
+                                    <span>@item.Module.Name</span>
+                                </a>
+                                <ul class="nav nav-children">
+                                    @foreach (var altitem in item.Modules)
+                                    {
+                                        <li>
+                                            <a class="nav-link" href="@altitem.Url">
+                                                @altitem.Name
+                                            </a>
+                                        </li>
+                                    }
+                                </ul>
+                            </li>
+                        }
+                    }
+                </ul>
+            </nav>
+        </div>
+        <script>
+            if (typeof localStorage !== 'undefined') {
+                if (localStorage.getItem('sidebar-left-position') !== null) {
+                    var initialPosition = localStorage.getItem('sidebar-left-position'),
+                        sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+                    sidebarLeft.scrollTop = initialPosition;
+                }
+            }
+        </script>
+    </div>
+</aside>

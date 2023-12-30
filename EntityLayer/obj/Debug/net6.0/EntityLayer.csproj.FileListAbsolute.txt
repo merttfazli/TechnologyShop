@@ -1,0 +1,11 @@
+C:\TechnologyShop\TechnologyShop\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\TechnologyShop\TechnologyShop\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\TechnologyShop\TechnologyShop\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

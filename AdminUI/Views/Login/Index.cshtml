@@ -1,0 +1,97 @@
+﻿﻿
+@model AdminUI.Models.LoginModel
+@{
+    Layout = null;
+}
+<!doctype html>
+<html class="fixed">
+<head>
+    <title>TechnologyShop</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/Assets/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/Assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="~/Assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/Assets/css/theme.css" />
+    <link rel="stylesheet" href="~/Assets/css/skins/default.css" />
+    <script src="~/Assets/vendor/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+    <div style="background-image: url('/Assets/img/background.jpg');background-size:cover">
+        <section class="body-sign">
+            <div class="center-sign">
+                <div class="panel card-sign">
+                    <div class="card-body" style="border-top-color:white">
+                        <div class="row">
+                            <div class="col-md-12 center">
+                                <img src="~/Assets/img/technologyshop.png" />
+                                <hr style="height:5px;" />
+                            </div>
+                        </div>
+                        <form id="login-form" asp-controller="Login" asp-action="index" method="post">
+                            @Html.AntiForgeryToken()
+                            <div class="form-group mb-3">
+                                <label for="my-email" class="font-weight-bold form-label">Email</label>
+                                <div class="input-group">
+                                    <input id="my-email" asp-for="@Model.Email" type="email" class="form-control form-control-lg" required />
+                                    <span class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <label for="my-email" generated="true" class="error"></label>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="clearfix">
+                                    <label for="my-password" class="float-left font-weight-bold form-label">Şifre</label>
+                                </div>
+                                <div class="input-group">
+                                    <input id="my-password" asp-for="@Model.Password" type="password" class="form-control form-control-lg" required />
+                                    <span class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <label for="my-password" generated="true" class="error"></label>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5" style="margin-left:150px">
+                                    <button type="submit" class="btn btn-dark mt-1">Giriş Yap</button>
+                                </div>
+                            </div>
+                            @if (!string.IsNullOrEmpty(Model.Message))
+                            {
+                                <p class="text-center text-info font-weight-bold mt-2">@Model.Message</p>
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="~/Assets/vendor/jquery/jquery.js"></script>
+        <script src="~/Assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+        <script src="~/Assets/vendor/popper/umd/popper.min.js"></script>
+        <script src="~/Assets/vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="~/Assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+        <script src="~/Assets/vendor/common/common.js"></script>
+        <script src="~/Assets/vendor/nanoscroller/nanoscroller.js"></script>
+        <script src="~/Assets/vendor/jquery-validation/jquery.validate.js"></script>
+        <script src="~/Assets/js/theme.js"></script>
+        <script src="~/Assets/js/theme.init.js"></script>
+        <script src="~/Assets/js/form.validation.js"></script>
+        <script src="~/Assets/vendor/jquery-validation/localization/messages_tr.js"></script>
+        <script>
+            $("form").validate({
+                lang: 'tr'
+            });
+        </script>
+    </div>
+</body>
+</html>

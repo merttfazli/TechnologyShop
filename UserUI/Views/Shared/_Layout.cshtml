@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Shop Grid - ShopGrids Bootstrap 5 eCommerce HTML Template.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/Assets/images/favicon.svg" />
+
+    <link rel="stylesheet" href="~/Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="~/Assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="~/Assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="~/Assets/css/main.css" />
+    @RenderSection("CustomCss" ,required: false)
+
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    @await Component.InvokeAsync("Header")
+
+    @RenderBody()
+
+    @await Component.InvokeAsync("Footer")
+
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/Assets/js/bootstrap.min.js"></script>
+    <script src="~/Assets/js/tiny-slider.js"></script>
+    <script src="~/Assets/js/glightbox.min.js"></script>
+    <script src="~/Assets/js/main.js"></script>
+    <script>
+        $('.radio-btn').on('click', function () {
+            let id =$(this).data('brand')
+            $('#brand_'+id).submit()
+        });
+    </script>
+    @RenderSection("CustomScripts" ,required: false)
+
+</body>
+</html>

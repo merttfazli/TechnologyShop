@@ -1,0 +1,241 @@
+﻿@model ProductModel
+@{
+    ViewData["Title"] = "TechnolohyShop - Ürünler";
+}
+@section CustomCss {
+    <link rel="stylesheet" href="~/Assets/vendor/datatables/media/css/dataTables.bootstrap4.css" />
+    <link rel="stylesheet" href="~/Assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+    <link rel="stylesheet" href="~/Assets/vendor/select2/css/select2.css" />
+    <link rel="stylesheet" href="~/Assets/vendor/select2-bootstrap-theme/select2-bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Assets/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css" />
+    <link href="~/css/dropzone.css" rel="stylesheet" />
+
+}
+<header class="page-header">
+    <h2>Kullanıcılar</h2>
+    <div class="right-wrapper text-right pr-3">
+        <ol class="breadcrumbs">
+            <li>
+                <i class="fas fa-home"></i>
+            </li>
+            <li><span>Ürünler</span></li>
+        </ol>
+    </div>
+</header>
+
+@if (!string.IsNullOrEmpty(Model.Result.Message))
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-info">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Bilgi!</strong> @Model.Result.Message
+            </div>
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <section class="card">
+            <header class="card-header">
+                <div class="card-actions">
+                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                </div>
+                <h2 class="card-title">Ürünler</h2>
+            </header>
+            <div class="card-body">
+                <table class="table table-bordered table-striped table-sm mb-0" id="datatable-default">
+                    <thead>
+                        <tr>
+                            <th>Ürün Adı</th>
+                            <th>Kategori Adı</th>
+                            <th>Marka</th>
+                            <th>Renk</th>
+                            <th>Fiyat</th>
+                            <th>Açıklama</th>
+                            <th>Resim</th>
+                            <th class="text-center" width="70px">İşlemler</th>
+                            <th class="text-center" width="90px">Özellik Ekle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var product in Model.ProductDtos)
+                        {
+                            <tr>
+                                <td>@product.Product.Name</td>
+                                <td>@product.CategoryName</td>
+                                <td>@product.BrandName</td>
+                                <td>@product.ColorName</td>
+                                <td>@product.Product.Price.ToString("n2")</td>
+                                <td>@product.Product.Description</td>
+                                <td class="text-center">
+                                    <a class="image-popup-no-margins" href="@product.Product.Image">
+                                        <img class="img-fluid" src="@product.Product.Image" width="65">
+                                    </a>
+                                </td>
+                                <td class="text-center no-wrap" width="70px">
+                                    <a asp-controller="Product" asp-action="Index" asp-route-id="@product.Product.Id" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="bottom" title="Düzenle"><i class="fas fa-edit"></i></a>
+                                    <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Product.Id" class="btn btn-danger btn-sm " data-toggle="tooltip" data-placement="bottom" title="Sil"><i class="fas fa-trash"></i></a>
+                                </td>
+                                <td class="text-center no-wrap" width="70px">
+                                    <a asp-controller="FeatureRelation" asp-action="Index" asp-route-id="@product.Product.Id" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="bottom" title="Düzenle"><i class="fas fa-plus"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-4">
+        <section class="card">
+            <header class="card-header">
+                <div class="card-actions">
+                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                </div>
+                <h2 class="card-title">Ürün Formu</h2>
+            </header>
+            <form id="user-form" class="default-form" asp-controller="Product" asp-action="Save" method="post" enctype="multipart/form-data">
+                <div class="card-body">
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <label>Ürün Adı</label>
+                            <input class="form-control form-control-sm" type="text" maxlength="100" asp-for="@Model.Product.Name" required />
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Kategori</label>
+                                <select class="form-control form-control-sm" asp-for="@Model.Product.CategoryId">
+                                    <option value="0">Kategori Seç</option>
+                                    @foreach (var category in Model.Categories)
+                                    {
+                                        <option value="@category.Id">@category.Name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Marka</label>
+                                <select class="form-control form-control-sm" asp-for="@Model.Product.BrandId">
+                                    <option value="0">Marka Seç</option>
+                                    @foreach (var brand in Model.Brands)
+                                    {
+                                        <option value="@brand.Id">@brand.Name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Renk</label>
+                                <select class="form-control form-control-sm" asp-for="@Model.Product.ColorId">
+                                    <option value="0">Renk Seç</option>
+                                    @foreach (var color in Model.Colors)
+                                    {
+                                        <option value="@color.Id">@color.Name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Fiyat</label>
+                                <input class="form-control form-control-sm only-decimal-comma" maxlength="10" type="text" asp-for="@Model.Product.Price" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Açıklama</label>
+                                <textarea class="form-control form-control-sm" type="text" maxlength="200" asp-for="@Model.Product.Description" required>@Model.Product.Description</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Resim</label>
+                                <div class="fileupload fileupload-new" data-provides="fileupload">
+                                    <div class="input-append">
+                                        <div class="uneditable-input">
+                                            <i class="fas fa-file fileupload-exists" style="margin-top:28px"></i>
+                                            <span class="fileupload-preview"></span>
+                                        </div>
+                                        <span class="btn btn-default btn-file">
+                                            <span class="fileupload-exists">Change</span>
+                                            <span class="fileupload-new">Select file</span>
+                                            <input name="file" accept="image/png,image/jpeg" type="file" />
+                                        </span>
+                                        <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-right">
+                    <input id="id" type="hidden" asp-for="@Model.Product.Id" />
+                    <a href="~/users" class="btn btn-danger"><i class="fas fa-times"></i> Temizle</a>
+                    <button class="btn btn-success" id="submit" type="submit"><i class="fas fa-save"></i> Kaydet</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+@section CustomScripts {
+    <script src="~/Assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="~/Assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/Assets/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="~/Assets/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/Assets/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.html5.min.js"></script>
+    <script src="~/Assets/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.print.min.js"></script>
+    <script src="~/Assets/vendor/datatables/extras/TableTools/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="~/Assets/vendor/datatables/extras/TableTools/pdfmake-0.1.32/pdfmake.min.js"></script>
+    <script src="~/Assets/vendor/datatables/extras/TableTools/pdfmake-0.1.32/vfs_fonts.js"></script>
+    <script src="~/Assets/vendor/jquery-validation/jquery.validate.js"></script>
+    <script src="~/Assets/js/form.validation.js"></script>
+    <script src="~/Assets/vendor/jquery-validation/localization/messages_tr.js"></script>
+    <script src="~/Assets/js/numbersonly.js"></script>
+    <script src="~/Assets/js/sweetalert2.all.min.js"></script>
+    <script src="~/Assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+    <script src="~/Assets/vendor/select2/js/select2.js"></script>
+    <script src="~/Assets/vendor/bootstrap-multiselect/js/bootstrap-multiselect.js"></script>
+
+    <script type="text/javascript">
+        (function ($) {
+
+            'use strict';
+
+            var datatableInit = function () {
+
+                $('#datatable-default').dataTable({
+                    dom: '<"row"<"col-lg-6"l><"col-lg-6"f>><"table-responsive"t>p',
+                    "pageLength": 100
+                });
+
+            };
+
+            $(function () {
+                datatableInit();
+            });
+
+        }).apply(this, [jQuery]);
+
+        $("form").validate({
+            lang: 'tr'
+        });
+    </script>
+}

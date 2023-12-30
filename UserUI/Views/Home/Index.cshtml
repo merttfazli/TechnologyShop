@@ -1,0 +1,69 @@
+﻿@model UserUI.Models.HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="product-grids section">
+    <div class="container">
+        <div class="row" style="margin-top:-60px">
+            @await Component.InvokeAsync("Filter")
+            <div class="col-md-9">
+                <div class="product-grids-head">
+                    <div class="product-grid-topbar">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active"
+                                 aria-labelledby="nav-grid-tab">
+                                <div class="row">
+                                    @foreach (var product in Model.ProductDtos)
+                                    {
+                                        <div class="col-md-4">
+                                            <div class="single-product">
+                                                <div class="product-image">
+                                                    <img src="@product.Product.Image" alt="#">
+                                                </div>
+                                                <div class="product-info" style="min-height:250px">
+                                                    <span class="category">@product.CategoryName</span>
+                                                    <h4 class="title">
+                                                        <a>@product.Product.Name</a>
+                                                    </h4>
+                                                    <p style="margin-top:20px">
+                                                        <b>Özellikler</b>
+                                                    </p>
+                                                    <div class="row mt-2">
+                                                        @foreach (var dto in product.FeatureRelationDtos)
+                                                        {
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <ul>
+                                                                    <li><b>@dto.Feature.Name: </b>@dto.Feature.Choice</li>
+                                                                </ul>
+                                                            </div>
+                                                        }
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <ul>
+                                                                <li><b>Renk: </b>@product.ColorName</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <ul>
+                                                                <li><b>Marka: </b>@product.BrandName</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>@product.Product.Price ₺</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

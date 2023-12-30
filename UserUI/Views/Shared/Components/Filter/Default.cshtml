@@ -1,0 +1,42 @@
+﻿@model HomeModel
+<div class="col-md-3">
+    <div class="product-sidebar">
+        <div class="single-widget">
+            <h3><a href="~/index">Tüm Kategoriler</a></h3>
+            <ul class="list">
+                @foreach (var item in Model.AmaountOfProduct)
+                {
+                    <li>
+                        <a href="~/kategoriler/@item.CategoryId">@item.CategoryName</a><span>(@item.Count)</span>
+                    </li>
+                }
+            </ul>
+        </div>
+        <form asp-action="Index" asp-controller="Price">
+            <div class="single-widget range">
+                <h3>Fiyat Aralığı</h3>
+                <input type="range" class="form-range" name="price" step="1" min="100" max="100000"
+                       value="10" onchange="rangePrimary.value=value">
+                <div class="range-inner">
+                    <label>₺</label>
+                    <input type="text" id="rangePrimary" disabled placeholder="100" />
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Filtrele</button>
+            </div>
+        </form>
+        <div class="single-widget condition">
+            <h3>Markaya Göre Filtrele</h3>
+            @foreach (var brand in Model.AmountOfProductInBrand)
+            {
+                <form asp-action="Index" asp-controller="Brand" asp-route-brandId="@brand.BrandId" id="brand_@brand.BrandId">
+                    <div class="form-check">
+                        <input class="form-check-input radio-btn" data-brand="@brand.BrandId" type="radio">
+                        <label class="form-check-label" for="radioButton1">
+                            @brand.BrandName (@brand.BrandCount)
+                        </label>
+                    </div>
+                </form>
+            }
+        </div>
+    </div>
+</div>

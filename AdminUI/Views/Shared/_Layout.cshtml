@@ -1,0 +1,75 @@
+﻿﻿@{
+    Layout = null;
+}
+<!doctype html>
+<html class="fixed">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/Assets/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/Assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="~/Assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/Assets/vendor/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="~/Assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+    @RenderSection("CustomCss" ,required: false)
+    <link rel="stylesheet" href="~/Assets/vendor/elusive-icons/css/elusive-icons.css" />
+    <link rel="stylesheet" href="~/Assets/css/theme.css" />
+    <link rel="stylesheet" href="~/Assets/css/custom.css" />
+    <link rel="stylesheet" href="~/Assets/css/skins/default.css" />
+    <script src="~/Assets/vendor/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+    <section class="body">
+        <header class="header">
+            <div class="logo-container">
+                <a href="~/dashboard" class="logo">
+                    <img src="/Assets/img/technologyshop.png" style="height: 52px; width: -webkit-fill-available;margin-top: -9px;" />
+                </a>
+            </div>
+            <div class="header-right">
+                @await Component.InvokeAsync("UserNotification")
+            </div>
+        </header>
+        <div class="inner-wrapper">
+            @await Component.InvokeAsync("DashboardSidebar")
+            <section role="main" class="content-body">
+                @RenderBody()
+            </section>
+        </div>
+    </section>
+    <script src="~/Assets/vendor/jquery/jquery.js"></script>
+    <script src="~/Assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="~/Assets/vendor/popper/umd/popper.min.js"></script>
+    <script src="~/Assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="~/Assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="~/Assets/vendor/common/common.js"></script>
+    <script src="~/Assets/vendor/nanoscroller/nanoscroller.js"></script>
+    <script src="~/Assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="~/Assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+    @RenderSection("CustomScripts" ,required: false)
+    <script src="~/Assets/js/theme.js"></script>
+    <script src="~/Assets/js/theme.init.js"></script>
+    <script src="~/Assets/js/langcode.js"></script>
+    <script src="~/Assets/js/addshortcut.js"></script>
+    <script>
+        $('#website').click(function () {
+            $.ajax({
+                url: '/Company/WebsiteUrl',
+                type: 'GET',
+                success: function (gelenveri) {
+                    window.location.href = gelenveri;
+                },
+                error: function (hata) {
+                    Swal.fire(
+                        'Bir hata oluştu , lütfen daha sonra tekrar deneyiniz!',
+                    )
+                }
+            });
+        });
+    </script>
+</body>
+</html>

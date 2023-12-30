@@ -1,0 +1,74 @@
+﻿<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | E-Shopper</title>
+    <link href="~/eshop/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/eshop/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/eshop/css/prettyPhoto.css" rel="stylesheet">
+    <link href="~/eshop/css/price-range.css" rel="stylesheet">
+    <link href="~/eshop/css/animate.css" rel="stylesheet">
+    <link href="~/eshop/css/main.css" rel="stylesheet">
+    <link href="~/eshop/css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/eshop/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/eshop/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/eshop/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="~/eshop/images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+    <header>
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 clearfix">
+                        <div class="logo pull-left">
+                            <a href="~/index"><img src="~/eshop/images/home/Hepsiburada.png" width="200" height="30" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 clearfix">
+                        <div class="shop-menu clearfix pull-right">
+                            <ul class="nav navbar-nav">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+@*                                     <li><a href="~/kullanici-bilgi-guncelle"><i class="fa fa-user"></i> @Session["Ad"] @Session["Soyad"]</a></li>
+ *@                                    <li><a href="/Account/LogOut"><i class="fa fa-lock"></i> Çıkış Yap</a></li>
+                                }
+                                else
+                                {
+                                    <li><a href="~/login"><i class="fa fa-lock"></i> Giriş Yap</a></li>
+                                }
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <li><a href="~/admin-panel"><i class="fa fa-lock"></i> Admin Paneli</a></li>
+                                }
+                                <li><a href="~/index"> Anasayfa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <p class="text-center">Copyright © 2023. Tüm Hakları Sakldır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/eshop/js/jquery.js"></script>
+    <script src="~/eshop/js/bootstrap.min.js"></script>
+    <script src="~/eshop/js/jquery.scrollUp.min.js"></script>
+    <script src="~/eshop/js/price-range.js"></script>
+    <script src="~/eshop/js/jquery.prettyPhoto.js"></script>
+    <script src="~/eshop/js/main.js"></script>
+</body>
+</html>
