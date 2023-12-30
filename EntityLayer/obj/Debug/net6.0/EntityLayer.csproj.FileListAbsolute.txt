@@ -9,3 +9,15 @@ C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
 C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
 C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\TechnologyShop\TechnologyShop\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.sourcelink.json
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\Samed\Desktop\tez\TechnologyShop\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

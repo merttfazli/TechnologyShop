@@ -9,81 +9,83 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AdminUI
 build_property.RootNamespace = AdminUI
-build_property.ProjectDir = C:\TechnologyShop\TechnologyShop\AdminUI\
+build_property.ProjectDir = C:\Users\Samed\Desktop\tez\TechnologyShop\AdminUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\TechnologyShop\TechnologyShop\AdminUI
+build_property.MSBuildProjectDirectory = C:\Users\Samed\Desktop\tez\TechnologyShop\AdminUI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Brand/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Brand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Category/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Color/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Color/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/FeatureRelation/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/FeatureRelation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVhdHVyZVJlbGF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Feature/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Feature/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVhdHVyZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Home/Dashboard.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Home/Privacy.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Login/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Product/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Shared/Components/DashboardSidebar/Default.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Shared/Components/DashboardSidebar/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFzaGJvYXJkU2lkZWJhclxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Shared/Components/UserNotification/Default.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Shared/Components/UserNotification/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXNlck5vdGlmaWNhdGlvblxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Shared/Error.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/UserGroup/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/UserGroup/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckdyb3VwXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/User/Index.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/_ViewImports.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/_ViewStart.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TechnologyShop/TechnologyShop/AdminUI/Views/Shared/_Layout.cshtml]
+[C:/Users/Samed/Desktop/tez/TechnologyShop/AdminUI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4v79f83pgu

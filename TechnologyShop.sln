@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminUI", "AdminUI\AdminUI.csproj", "{7D6E5425-7AB9-4F99-8553-CE6D8F3AC41D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserUI", "UserUI\UserUI.csproj", "{D6923668-AAB3-43F9-AE54-E8A701D478AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserUI", "UserUI\UserUI.csproj", "{D6923668-AAB3-43F9-AE54-E8A701D478AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

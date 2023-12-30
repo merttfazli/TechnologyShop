@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\TechnologyShop\\TechnologyShop\\AdminUI\\AdminUI.csproj": {}
+    "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\AdminUI\\AdminUI.csproj": {}
   },
   "projects": {
-    "C:\\TechnologyShop\\TechnologyShop\\AdminUI\\AdminUI.csproj": {
+    "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\AdminUI\\AdminUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TechnologyShop\\TechnologyShop\\AdminUI\\AdminUI.csproj",
+        "projectUniqueName": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\AdminUI\\AdminUI.csproj",
         "projectName": "AdminUI",
-        "projectPath": "C:\\TechnologyShop\\TechnologyShop\\AdminUI\\AdminUI.csproj",
-        "packagesPath": "C:\\Users\\merts\\.nuget\\packages\\",
-        "outputPath": "C:\\TechnologyShop\\TechnologyShop\\AdminUI\\obj\\",
+        "projectPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\AdminUI\\AdminUI.csproj",
+        "packagesPath": "C:\\Users\\Samed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\AdminUI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\merts\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Samed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\TechnologyShop\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\TechnologyShop\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj"
               }
             }
           }
@@ -72,25 +68,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\TechnologyShop\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TechnologyShop\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\TechnologyShop\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\merts\\.nuget\\packages\\",
-        "outputPath": "C:\\TechnologyShop\\TechnologyShop\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Samed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\merts\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Samed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\TechnologyShop\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\TechnologyShop\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -122,11 +114,15 @@
           "dependencies": {
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[6.0.0-preview.4.21253.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[3.1.1, )"
             }
           },
           "imports": [
@@ -145,25 +141,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\TechnologyShop\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TechnologyShop\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\TechnologyShop\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\merts\\.nuget\\packages\\",
-        "outputPath": "C:\\TechnologyShop\\TechnologyShop\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Samed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\merts\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Samed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -177,8 +169,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\TechnologyShop\\TechnologyShop\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\TechnologyShop\\TechnologyShop\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -238,25 +230,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\TechnologyShop\\TechnologyShop\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TechnologyShop\\TechnologyShop\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\TechnologyShop\\TechnologyShop\\EntityLayer\\EntityLayer.csproj",
-        "packagesPath": "C:\\Users\\merts\\.nuget\\packages\\",
-        "outputPath": "C:\\TechnologyShop\\TechnologyShop\\EntityLayer\\obj\\",
+        "projectPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\EntityLayer\\EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\Samed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samed\\Desktop\\tez\\TechnologyShop\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\merts\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Samed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -297,7 +285,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

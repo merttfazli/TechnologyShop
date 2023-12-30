@@ -34,15 +34,17 @@
 
     @await Component.InvokeAsync("Footer")
 
-    <a href="#" class="scroll-top">
-        <i class="lni lni-chevron-up"></i>
-    </a>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/Assets/js/bootstrap.min.js"></script>
     <script src="~/Assets/js/tiny-slider.js"></script>
     <script src="~/Assets/js/glightbox.min.js"></script>
     <script src="~/Assets/js/main.js"></script>
+
+    <!-- Chatbot -->
+    <script type="text/javascript" src="~/Assets/js/chatbot.js"></script>
+
     <script>
         $('.radio-btn').on('click', function () {
             let id =$(this).data('brand')
